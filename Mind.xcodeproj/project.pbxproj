@@ -12,6 +12,11 @@
 		291CD5D3236B004B001029A9 /* Mind.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5D1236B004B001029A9 /* Mind.xcdatamodeld */; };
 		291CD5D5236B004D001029A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291CD5D4236B004D001029A9 /* Assets.xcassets */; };
 		291CD5D8236B004D001029A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291CD5D6236B004D001029A9 /* LaunchScreen.storyboard */; };
+		291CD5E0236B13AF001029A9 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5DF236B13AE001029A9 /* TimeTableViewController.swift */; };
+		291CD5E6236B199E001029A9 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5E5236B199E001029A9 /* DiaryViewController.swift */; };
+		291CD5EB236B1F6E001029A9 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5EA236B1F6E001029A9 /* FinanceViewController.swift */; };
+		291CD5EE236B25C1001029A9 /* TimeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5ED236B25C1001029A9 /* TimeTableViewModel.swift */; };
+		291CD5F4236B4271001029A9 /* AddTimeTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CD5F3236B4270001029A9 /* AddTimeTaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		291CD5D4236B004D001029A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291CD5D7236B004D001029A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291CD5D9236B004D001029A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291CD5DF236B13AE001029A9 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		291CD5E5236B199E001029A9 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		291CD5EA236B1F6E001029A9 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		291CD5ED236B25C1001029A9 /* TimeTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewModel.swift; sourceTree = "<group>"; };
+		291CD5F3236B4270001029A9 /* AddTimeTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeTaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		291CD5C9236B004B001029A9 /* Mind */ = {
 			isa = PBXGroup;
 			children = (
-				291CD5CA236B004B001029A9 /* AppDelegate.swift */,
-				291CD5CE236B004B001029A9 /* Main.storyboard */,
+				291CD5E9236B1E69001029A9 /* Main */,
+				291CD5E3236B1613001029A9 /* TimeTableAndToDoList */,
+				291CD5E7236B19A7001029A9 /* Diary */,
+				291CD5EC236B1F72001029A9 /* Finance */,
+				291CD5E8236B1E34001029A9 /* Support Files */,
+				291CD5E4236B170C001029A9 /* Data Model */,
+			);
+			path = Mind;
+			sourceTree = "<group>";
+		};
+		291CD5E3236B1613001029A9 /* TimeTableAndToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				291CD5DF236B13AE001029A9 /* TimeTableViewController.swift */,
+				291CD5F3236B4270001029A9 /* AddTimeTaskTableViewController.swift */,
+				291CD5ED236B25C1001029A9 /* TimeTableViewModel.swift */,
+			);
+			path = TimeTableAndToDoList;
+			sourceTree = "<group>";
+		};
+		291CD5E4236B170C001029A9 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				291CD5D1236B004B001029A9 /* Mind.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		291CD5E7236B19A7001029A9 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				291CD5E5236B199E001029A9 /* DiaryViewController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		291CD5E8236B1E34001029A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				291CD5D4236B004D001029A9 /* Assets.xcassets */,
 				291CD5D6236B004D001029A9 /* LaunchScreen.storyboard */,
 				291CD5D9236B004D001029A9 /* Info.plist */,
-				291CD5D1236B004B001029A9 /* Mind.xcdatamodeld */,
 			);
-			path = Mind;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		291CD5E9236B1E69001029A9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				291CD5CA236B004B001029A9 /* AppDelegate.swift */,
+				291CD5CE236B004B001029A9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		291CD5EC236B1F72001029A9 /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				291CD5EA236B1F6E001029A9 /* FinanceViewController.swift */,
+			);
+			path = Finance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291CD5E6236B199E001029A9 /* DiaryViewController.swift in Sources */,
 				291CD5D3236B004B001029A9 /* Mind.xcdatamodeld in Sources */,
+				291CD5EE236B25C1001029A9 /* TimeTableViewModel.swift in Sources */,
 				291CD5CB236B004B001029A9 /* AppDelegate.swift in Sources */,
+				291CD5F4236B4271001029A9 /* AddTimeTaskTableViewController.swift in Sources */,
+				291CD5E0236B13AF001029A9 /* TimeTableViewController.swift in Sources */,
+				291CD5EB236B1F6E001029A9 /* FinanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3EUV3J8K83;
-				INFOPLIST_FILE = Mind/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Mind/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3EUV3J8K83;
-				INFOPLIST_FILE = Mind/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Mind/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
